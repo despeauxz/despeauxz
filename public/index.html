@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <link>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -24,7 +24,40 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Malik Godwin Onimisi: Fullstack Software Engineer</title>
+    <meta name="msapplication-TileColor" content="#576EE0">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@despeauxz">
+    <meta name="twitter:creator" content="@despeauxz">
+    <meta name="twitter:url" content="https://despeauxz.com">
+    <meta name="twitter:title" content="Malik Godwin Onimisi: Fullstack Software Engineer.">
+    <meta name=twitter:description content="Malik Godwin is a Fullstack Software developer highly skilled progressively enhanced web applications.">
+    <meta property="og:title" content="Malik Godwin Onimisi: Fullstack Software Engineer.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Malik Godwin">
+    <meta property="og:url" content="https://despeauxz.com">
+    <meta property=og:description content="Malik Godwin is a Fullstack Software developer highly skilled progressively enhanced web applications.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script>
+      // It's best to inline this in `head` to avoid FOUC (flash of unstyled content) when changing pages or themes
+      if (
+        localStorage.getItem('color-theme') === 'dark' ||
+        (!('color-theme' in localStorage) &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css"></link>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
+    <script src="/assets/js/main.js"></script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
