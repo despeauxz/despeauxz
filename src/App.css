@@ -23,7 +23,7 @@
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.15rem;
-  --normal-font-size: .938rem
+  --normal-font-size: .938rem;
   --small-font-size: .75rem;
 
   --mb-0-25: .25rem;
@@ -301,10 +301,6 @@ header {
 
 .home__description {
   margin-bottom: var(--mb-2);
-}
-
-.home__scroll {
-  /* display: none; */
 }
 
 .home__scroll-button {
@@ -777,7 +773,6 @@ header {
 }
 
 .project__img {
-  transform: scaleX(-1);
   width: 200px;
   justify-self: center;
   margin-bottom: 3rem;

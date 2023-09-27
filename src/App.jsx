@@ -195,13 +195,13 @@ function App() {
           <div className='home__container container grid'>
             <div className='home__content grid'>
               <div className='home__social'>
-                <a href="https://www.linkedin.com/in/godwinmalik/" target="_blank" className='home__social-icon'>
+                <a href="https://www.linkedin.com/in/godwinmalik/" target="_blank" className='home__social-icon' rel="noreferrer">
                   <i className='uil uil-linkedin-alt'></i>
                 </a>
-                <a href="https://www.github.com/despeauxz/" target="_blank" className='home__social-icon'>
+                <a href="https://www.github.com/despeauxz/" target="_blank" className='home__social-icon' rel="noreferrer">
                   <i className='uil uil-github-alt'></i>
                 </a>
-                <a href="https://www.linkedin.com/in/godwinmalik/" target="_blank" className='home__social-icon'>
+                <a href="https://www.linkedin.com/in/godwinmalik/" target="_blank" className='home__social-icon' rel="noreferrer">
                   <i className='uil uil-linkedin-alt'></i>
                 </a>
               </div>
@@ -543,7 +543,7 @@ function App() {
                   <div className='portfolio__data'>
                     <h3 className='portfolio__title'>Editor JS</h3>
                     <p className='portfolio__description'>Free block-style editor with a universal JSON output</p>
-                    <a href='https://editorjs.io/' target="_blank" className='button button--flex button-small portfolio__button'>
+                    <a href='https://editorjs.io/' target="_blank" className='button button--flex button-small portfolio__button' rel="noreferrer">
                       Demo
                       <i className='uil uil-arrow-right button__icon'></i>
                     </a>
@@ -557,7 +557,7 @@ function App() {
                   <div className='portfolio__data'>
                     <h3 className='portfolio__title'>Hawk.so</h3>
                     <p className='portfolio__description'>Fast and lightweight errors tracking service. Catchers for JavaScript, Python, PHP, Node.js, Swift, Java Android, Kotlin and Scala</p>
-                    <a href='https://hawk.so/' target="_blank" className='button button--flex button-small portfolio__button'>
+                    <a href='https://hawk.so/' target="_blank" className='button button--flex button-small portfolio__button' rel="noreferrer">
                       Demo
                       <i className='uil uil-arrow-right button__icon'></i>
                     </a>
@@ -571,7 +571,7 @@ function App() {
                   <div className='portfolio__data'>
                     <h3 className='portfolio__title'>Honda Canada</h3>
                     <p className='portfolio__description'>Honda Canada official web application via liason AssemblyHQ</p>
-                    <a href='https://www.honda.ca/en/' target="_blank" className='button button--flex button-small portfolio__button'>
+                    <a href='https://www.honda.ca/en/' target="_blank" className='button button--flex button-small portfolio__button' rel="noreferrer">
                       Demo
                       <i className='uil uil-arrow-right button__icon'></i>
                     </a>
@@ -780,13 +780,13 @@ function App() {
               </ul>
 
               <div className="footer__socials">
-                <a href='https://www.linkedin.com/in/godwinmalik' target="_blank" className="footer__social">
+                <a href='https://www.linkedin.com/in/godwinmalik' target="_blank" className="footer__social" rel="noreferrer">
                   <i className='uil uil-linkedin'></i>
                 </a>
-                <a href='https://www.twitter.com/despeauxz' target="_blank" className="footer__social">
+                <a href='https://www.twitter.com/despeauxz' target="_blank" className="footer__social" rel="noreferrer">
                   <i className='uil uil-twitter-alt'></i>
                 </a>
-                <a href='https://www.instagram.com/despeauxz' target="_blank" className="footer__social">
+                <a href='https://www.instagram.com/despeauxz' target="_blank" className="footer__social" rel="noreferrer">
                   <i className='uil uil-instagram'></i>
                 </a>
               </div>
