@@ -201,9 +201,6 @@ function App() {
                 <a href="https://www.github.com/despeauxz/" target="_blank" className='home__social-icon' rel="noreferrer">
                   <i className='uil uil-github-alt'></i>
                 </a>
-                <a href="https://www.linkedin.com/in/godwinmalik/" target="_blank" className='home__social-icon' rel="noreferrer">
-                  <i className='uil uil-linkedin-alt'></i>
-                </a>
               </div>
 
               <div className='home__img'>
@@ -391,6 +388,26 @@ function App() {
                 <div className='skills__data'>
                   <div className='skills__titles'>
                     <h3 className='skills__name'>Ruby</h3>
+                    <span className='skills__number'>65%</span>
+                  </div>
+
+                  <div className='skills__bar'>
+                    <span className='skills__percentage skills__rubyonrails'></span>
+                  </div>
+                </div>
+                <div className='skills__data'>
+                  <div className='skills__titles'>
+                    <h3 className='skills__name'>Sitecore</h3>
+                    <span className='skills__number'>65%</span>
+                  </div>
+
+                  <div className='skills__bar'>
+                    <span className='skills__percentage skills__rubyonrails'></span>
+                  </div>
+                </div>
+                <div className='skills__data'>
+                  <div className='skills__titles'>
+                    <h3 className='skills__name'>GraphQL</h3>
                     <span className='skills__number'>65%</span>
                   </div>
 
