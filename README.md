@@ -26,7 +26,7 @@ I am a Full Stack Developer with a huge love for Alpine.js, Vue.js, React.js, Ru
 
 I love to read books and listen to music.
 
-- 🔭 I’m currently creating two courses on Alpine.js and WordPress security, and [Eazy Plugin Manager](https://eazyplugins.com/eazy-plugin-manager/) for helping WordPress administrators to manage plugins with so many cool features like never before.
+- 🔭 I’m currently working on apersonal AI project and increasing knownledge on Ruby on Rails.
 - 🌱 I’m currently learning many things, I believe that everyday is a learning opportunity.
 - 👯 I’m currently open for work and employment opportunities (remote and relocation)
 - 💬 Ask me about Vue.js, React.js, Alpine.js, Node.js, Ruby on Rails and API development.
