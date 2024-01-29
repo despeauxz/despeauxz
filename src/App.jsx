@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-use-before-define */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import Star from "./components/Star";
@@ -14,135 +13,6 @@ import 'swiper/css/scrollbar';
 import './App.css';
 
 function App() {
-  const navClose = document.getElementById('nav-close');
-  const navToggle = document.getElementById('nav-toggle');
-  const navMenu = document.getElementById('nav-menu');
-  const navLinks = document.querySelectorAll('.nav__link');
-  const tabs = document.querySelectorAll('[data-target');
-  const tabContents = document.querySelectorAll('[data-content');
-  const skillsContent = document.getElementsByClassName('skills__content');
-  const modalViews = document.querySelectorAll('.services__modal');
-  const modalBtns = document.querySelectorAll('.services__button');
-  const modalCloses = document.querySelectorAll('.services__modal-close');
-  const sections = document.querySelectorAll('section[id]');
-  
-  useEffect(() => {
-    navLinks?.forEach(n => n.addEventListener('click', () => {
-      navMenu.classList.remove('show-menu');
-    }))
-  }, [navLinks, navMenu]);
-
-  useEffect(() => {
-    window.addEventListener('scroll', scrollActive);
-    window.addEventListener('scroll', scrollHeader);
-    window.addEventListener('scroll', scrollUp);
-  }, [])
-
-
-
-  useEffect(() => {
-    let modal = function(modalClick) {
-      modalViews[modalClick].classList.add('active-modal');
-    }
-
-    modalBtns.forEach((modalBtn, i) => {
-      modalBtn.addEventListener('click', () => {
-        modal(i);
-      })
-    });
-  }, [modalViews, modalBtns]);
-
-  useEffect(() => {
-    modalCloses.forEach((modalClose) => {
-      modalClose.addEventListener('click', () => {
-        modalViews.forEach(modalView => {
-          modalView.classList.remove('active-modal');
-        });
-      });
-    });
-  }, [modalCloses, modalViews])
-
-  useEffect(() => {
-    tabs.forEach(tab => {
-      tab.addEventListener('click', (e) => {
-        const target = document.querySelector(tab.dataset.target);
-        target.classList.add('qualification__active');
-
-        tabContents.forEach(tabContent => {
-          tabContent.classList.remove('qualification__active');
-        })
-        target.classList.add('qualification__active');
-
-        tabs.forEach(tab => {
-          tab.classList.remove('qualification__active');
-        });
-        target.classList.add('qualification__active');
-      });
-    })
-  }, [tabs, tabContents]);
-
-  const scrollActive = () => {
-    const scrollY = window.pageYOffset;
-
-    sections?.forEach(current => {
-      const sectionHeight = current.offsetHeight;
-      const sectionTop = current.offsetTop - 50;
-      const sectionId = current.getAttribute('id');
-
-      if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-        document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-      } else {
-        document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-      }
-    });
-  }
-
-  const scrollHeader = () => {
-    const scrollY = window.pageYOffset;
-    const nav = document.getElementById('header');
-
-    if (scrollY >= 80) {
-      nav.classList.add('scroll-header');
-    } else {
-      nav.classList.remove('scroll-header')
-    }
-  }
-
-  const scrollUp = () => {
-    const scrollY = window.pageYOffset;
-    const scrollUp = document.getElementById('scroll-up');
-    
-    if (scrollY >= 560) {
-      scrollUp.classList.add('show-scroll');
-    } else {
-      scrollUp.classList.remove('show-scroll')
-    }
-  }
-
-  const toggleSkills = (e) => {
-    let itemClass = e.target.parentNode.className;
-
-    for (let i = 0; i < skillsContent.length; i++) {
-      skillsContent[i].className = 'skills__content skills__close'
-    }
-
-    if (itemClass === "skills__content skills__close") {
-      e.target.parentNode.className = "skills__content skills__open";
-    }
-  }
-
-  const closeDrawer = () => {
-    navClose.addEventListener('click', () => {
-      navMenu.classList.remove('show-menu');
-    })
-  }
-
-  const openDrawer = () => {
-    navToggle.addEventListener('click', () => {
-      navMenu.classList.add('show-menu');
-    });
-  }
-
   return (
     <>
       <header className='header' id='header'>
@@ -178,13 +48,13 @@ function App() {
               </li>
             </ul>
 
-            <i className='uil uil-times nav__close' id='nav-close' onClick={closeDrawer}></i>
+            <i className='uil uil-times nav__close' id='nav-close'></i>
           </div>
 
           <div className='nav__btns'>
             {/* <div className="uil uil-moon change-theme" id='theme-button' onClick={changeTheme}></div> */}
 
-            <div className='nav__toggle' onClick={openDrawer} id='nav-toggle'>
+            <div className='nav__toggle' id='nav-toggle'>
               <i className='uil uil-apps'></i>
             </div>
           </div>
@@ -267,7 +137,7 @@ function App() {
               </div>
 
               <div className='about__buttons'>
-                <a href='/assets/resume/Resume.pdf' className='button button--flex'>
+                <a target="_blank" href='/assets/resume/Resume.pdf' className='button button--flex'>
                   Download CV <i className='uil uil-download-alt button__icon'></i>
                 </a>
               </div>
@@ -281,7 +151,7 @@ function App() {
 
           <div className='skills__container container grid'>
             <div className='skills__content skills__open'>
-              <div className='skills__header' onClick={toggleSkills}>
+              <div className='skills__header'>
                 <i className='uil uil-brackets-curly skills__icon'></i>
 
                 <div>
@@ -362,7 +232,7 @@ function App() {
             </div>
 
             <div className='skills__content skills__close'>
-              <div className='skills__header' onClick={toggleSkills}>
+              <div className='skills__header'>
                 <i className='uil uil-server-network skills__icon'></i>
 
                 <div>
@@ -498,9 +368,9 @@ function App() {
                   
                   <div>
                     <h3>Frontend Engineer</h3>
-                    <span className='qualification__subtitle'>Build with Assembly(AssemblyHQ) - Contract</span>
+                    <span className='qualification__subtitle'>Coinflow - Full-time</span>
                     <div className='qualification__calendar'>
-                      <i className='uil uil-calendar-alt'></i> Aug. 2022  -  Jan. 2023
+                      <i className='uil uil-calendar-alt'></i> Sept. 2022  -  June. 2023
                     </div>
                   </div>
                 </div>
@@ -508,9 +378,9 @@ function App() {
                 <div className='qualification__data'>
                   <div>
                     <h3>Frontend Engineer</h3>
-                    <span className='qualification__subtitle'>Sendstack, Lagos - Remote</span>
+                    <span className='qualification__subtitle'>Build with Assembly(AssemblyHQ) - Contract</span>
                     <div className='qualification__calendar'>
-                      <i className='uil uil-calendar-alt'></i> Apr. 2020 - Dec. 2020
+                      <i className='uil uil-calendar-alt'></i>  Aug. 2022  -  Jan. 2023
                     </div>
                   </div>
 
@@ -529,11 +399,26 @@ function App() {
                   </div>
                   
                   <div>
+                    <h3>Frontend Engineer</h3>
+                    <span className='qualification__subtitle'>Sendstack, Lagos - Remote</span>
+                    <div className='qualification__calendar'>
+                      <i className='uil uil-calendar-alt'></i> Apr. 2020 - Dec. 2020
+                    </div>
+                  </div>
+                </div>
+
+                <div className='qualification__data'>
+                  <div>
                     <h3>Software Engineer</h3>
                     <span className='qualification__subtitle'>Andela, Lagos</span>
                     <div className='qualification__calendar'>
                       <i className='uil uil-calendar-alt'></i> May 2019 - Oct. 2019
                     </div>
+                  </div>
+
+                  <div>
+                    <span className='qualification__rounder'></span>
+                    <span className='qualification__line'></span>
                   </div>
                 </div>
               </div>
