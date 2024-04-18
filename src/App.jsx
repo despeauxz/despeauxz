@@ -93,8 +93,8 @@ function App() {
 
               <div className='home__data'>
                 <h1 className='home__title'>Hi, I'm Godwin</h1>
-                <h3 className='home_-subtitle'>Frontend / Fullstack Software Engineer</h3>
-                <p className='home__description'>Experienced software developer, proficient in many platforms and tools with over 8 years of experience focused on delivering business value through quality code.</p>
+                <h3 className='home_-subtitle'>Senior Frontend / Fullstack Software Engineer</h3>
+                <p className='home__description'>Experienced software developer, proficient in many platforms and tools with over 7years of experience focused on delivering business value through quality code.</p>
                 <a href='#contact' className='button button--flex'>Contact Me <i className='uil uil-message button__icon'></i></a>
               </div>
             </div>
@@ -345,10 +345,10 @@ function App() {
               <div className='qualification__content  qualification__active' data-content id='work'>
                 <div className='qualification__data'>
                   <div>
-                    <h3>Fullstack Software Engineer</h3>
+                    <h3>Senior Fullstack Software Engineer</h3>
                     <span className='qualification__subtitle'>IDEX Innovation, Dubai(Remote)</span>
                     <div className='qualification__calendar'>
-                      <i className='uil uil-calendar-alt'></i> Dec. 2020  -  June 2023
+                      <i className='uil uil-calendar-alt'></i> Dec. 2020  -  Present
                     </div>
                   </div>
 
@@ -367,7 +367,7 @@ function App() {
                   </div>
                   
                   <div>
-                    <h3>Frontend Engineer</h3>
+                    <h3>Senior Frontend Engineer</h3>
                     <span className='qualification__subtitle'>Coinflow - Full-time</span>
                     <div className='qualification__calendar'>
                       <i className='uil uil-calendar-alt'></i> Sept. 2022  -  June. 2023
@@ -377,7 +377,7 @@ function App() {
 
                 <div className='qualification__data'>
                   <div>
-                    <h3>Frontend Engineer</h3>
+                    <h3>Intermediate Frontend Engineer</h3>
                     <span className='qualification__subtitle'>Build with Assembly(AssemblyHQ) - Contract</span>
                     <div className='qualification__calendar'>
                       <i className='uil uil-calendar-alt'></i>  Aug. 2022  -  Jan. 2023
@@ -419,6 +419,23 @@ function App() {
                   <div>
                     <span className='qualification__rounder'></span>
                     <span className='qualification__line'></span>
+                  </div>
+                </div>
+
+                <div className='qualification__data'>
+                  <div></div>
+
+                  <div>
+                    <span className='qualification__rounder'></span>
+                    <span className='qualification__line'></span>
+                  </div>
+                  
+                  <div>
+                    <h3>Frontend Engineer</h3>
+                    <span className='qualification__subtitle'>Open Source Contributor, Russia - Remote</span>
+                    <div className='qualification__calendar'>
+                      <i className='uil uil-calendar-alt'></i> May 2019 - Dec. 2020
+                    </div>
                   </div>
                 </div>
               </div>
