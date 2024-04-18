@@ -432,7 +432,7 @@ function App() {
                   
                   <div>
                     <h3>Frontend Engineer</h3>
-                    <span className='qualification__subtitle'>Open Source Contributor, Russia - Remote</span>
+                    <span className='qualification__subtitle'>Codex(Open-source Contributor), Russia - Remote</span>
                     <div className='qualification__calendar'>
                       <i className='uil uil-calendar-alt'></i> May 2019 - Dec. 2020
                     </div>
